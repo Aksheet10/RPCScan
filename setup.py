@@ -49,8 +49,7 @@ except:
         file_content = requests.get("https://raw.githubusercontent.com/HACKE-RC/RPCScan/main/rpcscan.py").text
         file = open("rpcscan.py", "w")
         file.write(file_content)
-        print("File has been downloaded now rerun this program to proceed")
-        exit(0)
+        file.close()
     elif ask=="n" or "no":
         exit(0)
     else:
@@ -72,6 +71,7 @@ except:
         file = open("scanner.py", "w")
         file.write(file_content)
         print("File has been downloaded now rerun this program to proceed")
+        file.close()
         exit(0)
     elif ask=="n" or "no":
         exit(0)
@@ -83,6 +83,7 @@ except:
             file = open("scanner.py", "w")
             file.write(file_content)
             print("File has been downloaded now rerun this program to proceed")
+            file.close()
             exit(0)
         elif ask=="n" or "no":
             exit(0)
@@ -91,7 +92,7 @@ except:
 def verifyintsall():
     command = "echo true >> .verified.rc"
     os.system(command)
-    print("The tool is now successfully installed!\nNow you can use the command rpcscan <websitelist> to find rpcscan.php files.")
+    print("The tool is now successfully installed!\nNow you can use the command rpcscan <websitelist> to find xmlrpc.php files.")
 
 def install():
     command = "cp rpcscan.py /usr/bin/rpcscan"
