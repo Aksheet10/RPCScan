@@ -97,6 +97,12 @@ def install():
     command = "cp rpcscan.py /usr/bin/rpcscan"
     try:
         os.system(command)
+    except:
+        print("Unable to setup the file.\nTry running this script as superuser.")
+        sys.exit(1)
+    command = "cp scanner.py /usr/bin/rpcscanner"
+    try:
+        os.system(command)
         verifyintsall()
     except:
         print("Unable to setup the file.\nTry running this script as superuser.")
