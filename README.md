@@ -9,12 +9,14 @@ This command is for Debian/Linux Based Shells.
 ```bash
 git clone https://github.com/HACKE-RC/RPCScan
 cd RPCScan
+chmod +x *
 sudo python3 setup.py
 ```
 For termux:
 ```bash
 git clone https://github.com/HACKE-RC/RPCScan
 cd RPCScan
+chmod +x *
 python setup.py
 ```
 After running setup.py you can simply type rpcscan -h to see the help menu.
