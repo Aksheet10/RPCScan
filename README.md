@@ -8,7 +8,7 @@ RPCSCAN by RC - A python tool to automate all the efforts that you put on findin
 This command is for Debian/Linux Based Shells.
 ```bash
 git clone https://github.com/HACKE-RC/RPCScan
-cd RPScan
+cd RPCScan
 sudo python3 setup.py
 ```
 For termux:
