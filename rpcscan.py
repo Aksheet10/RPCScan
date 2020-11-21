@@ -28,14 +28,14 @@ def help():
     print("----- github.com/HACKE-RC/XMLRPC -----")
     print("\33[9mA python tool to automate all the efforts that you put on the xmlrpc.php file.")
     print("Usage:")
-    print("\txmlrpc <weblist>")
+    print("\trpcscan <weblist>")
     sys.exit(1)
 
 def send(url):
     return http.request("GET", url)
 
 def scan(url):
-    os.system(f"python3 scanner.py {url}")
+    os.system(f"rpcscanner {url}")
 
 if (len(sys.argv)<2):
     help()
