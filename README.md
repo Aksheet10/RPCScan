@@ -17,7 +17,7 @@ For termux:
 git clone https://github.com/HACKE-RC/RPCScan
 cd RPCScan
 chmod +x *
-python setup.py
+python termux-setup.py
 ```
 After running setup.py you can simply type rpcscan -h to see the help menu.
 If you get any error while installing the tool you can create an issue or message me at twitter.com/coder_rc or If you are not able to run it after running the setup.py you can simply run ```python3 setup.py -r``` to repair it.
