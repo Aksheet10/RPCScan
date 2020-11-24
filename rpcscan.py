@@ -26,7 +26,7 @@ def help():
     print("\t\t\t\t\tv1.0")
     print(f"{Fore.BLUE}------------ RPCScan by RC ------------")
     print("----- github.com/HACKE-RC/XMLRPC -----")
-    print("\33[9mA python tool to automate all the efforts that you put on the xmlrpc.php file.")
+    print("A python tool to automate all the efforts that you put on the xmlrpc.php file.")
     print("Usage:")
     print("\trpcscan <weblist>")
     sys.exit(1)
